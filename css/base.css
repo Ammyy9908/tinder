@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --gradient--background-button-primary: linear-gradient(
+    45deg,
+    #fd267a,
+    #ff6036
+  );
+  --gradient--plus: linear-gradient(45deg, #fd267a, #ff6036);
+  --gradient--gold: linear-gradient(45deg, #e6af16, #f7d472);
+  --gradient--gold-shine: linear-gradient(45deg, #e6af16, #f7d472, #e6af16);
+  --gradient--platinum: linear-gradient(45deg, #111418, #656e7b);
+  --gradient--platinum-shine: linear-gradient(45deg, #111418, #656e7b, #111418);
+  --gradient--brand: linear-gradient(45deg, #fd267a, #ff6036);
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style: none;
+}

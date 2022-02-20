@@ -1,0 +1,256 @@
+.hero {
+  width: 100%;
+  height: 70vh;
+  background-color: #262626;
+  position: relative;
+}
+
+.hero-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: 50%;
+  background-image: url(../assets/tinder_hero_banner.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-dark-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0006;
+}
+
+header {
+  width: 100%;
+  height: 55px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-right > nav {
+  display: none;
+}
+
+.header-left > nav {
+  display: none;
+}
+
+.menu-btn {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background-color: transparent;
+}
+
+.header-right > nav ul {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.header-left a svg {
+  width: 120px;
+  height: auto;
+}
+.header-left > nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.header-left > nav > ul li a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.language-selctor {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  background-color: transparent;
+  border: 0;
+}
+.language-selctor svg {
+  fill: #fff;
+}
+
+.login-btn-header {
+  padding-left: 28px;
+  padding-right: 28px;
+  height: 40px;
+  max-width: 100%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #d6002f;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.hero-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  color: #fff;
+  opacity: 1;
+  top: 0;
+  left: 0;
+}
+.hero-content h1 {
+  font-size: 8vw;
+  text-align: center;
+  margin: 0;
+  line-height: 1.18;
+  font-weight: 800;
+  transition: all 0.1s ease-in-out;
+}
+
+.app-cta {
+  width: 260px;
+  display: inline-flex;
+  align-items: center;
+  background: var(--gradient--background-button-primary);
+  transition-property: background;
+  text-transform: uppercase;
+  padding: 0 8px;
+  min-height: 55px;
+  margin-top: 20px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  color: #fff;
+  justify-content: center;
+  box-shadow: 0 2px 6px 0 #656e7b1f;
+  border-radius: 100px;
+}
+
+.hero-footer {
+  position: absolute;
+  height: 100%;
+  font-size: 0.8rem;
+  color: #fff;
+  z-index: 99;
+  padding: 0px 12px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+.hero-footer p {
+  text-align: center;
+}
+
+.testimonials {
+  display: flex;
+  width: 90%;
+  margin: 18px auto;
+  overflow-x: scroll;
+}
+
+.testimonial {
+  min-width: calc(95.3333% - 0px);
+  max-width: calc(95.3333% - 0px);
+  padding: 8px;
+  flex-grow: 1;
+}
+.testimonial-body {
+  padding: 24px;
+  position: relative;
+  height: 100%;
+  box-shadow: 0 2px 6px 0 #656e7b1f;
+  border: 1px solid #d4d8de;
+  border-radius: 5px;
+}
+
+.testimonial-header {
+  margin-bottom: 8px;
+}
+.seperator {
+  width: 100%;
+  height: 1px;
+  background-color: #d4d8de;
+  margin-bottom: 12px;
+}
+
+.testimonial-body p {
+  color: #505965;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 100vh;
+  }
+  .testimonial {
+    min-width: calc(55.3333% - 0px);
+    max-width: calc(55.3333% - 0px);
+  }
+}
+
+@media screen and (min-width: 1005px) {
+  .header-right > nav {
+    display: block;
+  }
+
+  .header-left > nav {
+    display: flex;
+  }
+
+  .testimonial {
+    min-width: calc(33.3333% - 0px);
+    max-width: calc(33.3333% - 0px);
+  }
+  .hero-footer {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    height: auto;
+    align-items: flex-end !important;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  header {
+    height: 95px;
+  }
+  .header-left a svg {
+    width: 210px;
+    height: auto;
+  }
+}
