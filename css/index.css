@@ -1,3 +1,34 @@
+.splash {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  background: var(--gradient--brand);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-inner {
+  width: 230px;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: beat 0.5s ease-in-out infinite;
+}
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.splash-inner svg {
+  width: 110px;
+  height: 110px;
+}
 .hero {
   width: 100%;
   height: 70vh;
@@ -15,20 +46,6 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: tranform-background 10s infinite;
-  overflow: hidden;
-}
-
-@keyframes tranform-background {
-  0% {
-    background-position: 50%;
-  }
-  50% {
-    background-position: -50px -10px;
-  }
-  100% {
-    background-position: 50%;
-  }
 }
 
 .hero-dark-overlay {
@@ -38,8 +55,7 @@
   top: 0;
   left: 0;
   background-color: #0006;
-
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 header {
@@ -72,6 +88,43 @@ header {
 
 .header-left > nav {
   display: none;
+}
+
+.header-left > nav > ul > li {
+  position: relative;
+  padding-bottom: 12px;
+}
+.header-left > nav > ul > li:hover > a {
+  color: #fd267a;
+  text-decoration: underline;
+}
+.header-left > nav > ul > li:hover .dropdown-item {
+  display: flex;
+}
+
+.dropdown-item {
+  position: absolute;
+  top: 100%;
+  display: none;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  left: 0;
+  width: max-content;
+  height: max-content;
+  z-index: 999;
+}
+.dropdown-item li {
+  position: relative;
+}
+
+.dropdown-level2 {
+  padding-left: 35px;
+  margin-top: 5px;
+}
+.dropdown-item li a:hover {
+  color: #fd267a;
+  text-decoration: underline;
 }
 
 .menu-btn {
