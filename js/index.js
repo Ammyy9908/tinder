@@ -2,7 +2,7 @@
 
 window.addEventListener("scroll", function (e) {
   const scroll = window.scrollY;
-  const opacity = Math.max(0, Math.min(1, -scroll / 150 + 2));
+  const opacity = Math.max(0, Math.min(1, -scroll / 110 + 2));
   const heading = document.querySelector(".hero__heading");
   const cta_btn = document.querySelector(".app-cta");
   const hero_footer = document.querySelector(".hero-footer");
@@ -15,7 +15,8 @@ window.addEventListener("scroll", function (e) {
   document.querySelector(
     ".testimonials"
   ).innerHTML += `<div class="testimonial">
-    <div class="testimonial-body"><div class="testimonial-header">
+    <div class="testimonial-body">
+    <div class="testimonial-header">
     <h3>Testimonial Heading</h3>
 </div>
 <div class="seperator"></div>

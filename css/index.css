@@ -24,6 +24,8 @@
   top: 0;
   left: 0;
   background-color: #0006;
+
+  opacity: 0.4;
 }
 
 header {
@@ -31,7 +33,7 @@ header {
   height: 55px;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 99;
   display: flex;
   align-items: center;
 }
@@ -213,7 +215,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .hero {
-    height: 100vh;
+    height: 90vh;
   }
   .testimonial {
     min-width: calc(55.3333% - 0px);
@@ -252,5 +254,9 @@ header {
   .header-left a svg {
     width: 210px;
     height: auto;
+  }
+
+  .hero-dark-overlay {
+    background: var(--gradient--brand);
   }
 }
