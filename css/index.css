@@ -12,9 +12,23 @@
   top: 0;
   left: 0;
   background-position: 50%;
-
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  animation: tranform-background 10s infinite;
+  overflow: hidden;
+}
+
+@keyframes tranform-background {
+  0% {
+    background-position: 50%;
+  }
+  50% {
+    background-position: -50px -10px;
+  }
+  100% {
+    background-position: 50%;
+  }
 }
 
 .hero-dark-overlay {
@@ -292,7 +306,7 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    height: 90vh;
+    height: 100vh;
   }
   .testimonial {
     min-width: calc(55.3333% - 0px);
