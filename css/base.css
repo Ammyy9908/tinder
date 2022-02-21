@@ -33,3 +33,94 @@ body {
 ul {
   list-style: none;
 }
+
+.seperator {
+  width: 100%;
+  height: 1px;
+  background-color: #d4d8de;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.footer-wrapper {
+  width: 90%;
+  margin: 18px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-one {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.footer-links > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-links a {
+  color: #505965;
+}
+
+.social-links {
+  flex-direction: row !important;
+  gap: 22px;
+}
+.social-links a:hover svg {
+  fill: #fd267a;
+}
+.app-promotion {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.app_btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.app_btns a {
+  padding: 16px 8px;
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app_btns > a img {
+  max-width: 100%;
+  height: auto;
+}
+.footer-description {
+  margin-top: 22px;
+}
+.footer-description p {
+  margin-bottom: 12px;
+  color: #505965;
+}
+@media screen and (min-width: 930px) {
+  .footer-one {
+    flex-direction: row;
+    gap: 75px;
+  }
+}
