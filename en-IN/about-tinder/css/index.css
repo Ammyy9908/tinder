@@ -1,0 +1,168 @@
+header {
+  width: 100%;
+  height: 76px;
+  background-color: rgb(255, 255, 255);
+}
+
+.header-wrapper {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-left > a > svg {
+  width: 200px;
+  height: max-content;
+}
+.header-left > nav {
+  display: none;
+}
+
+.header-right {
+  display: none;
+  align-items: center;
+  gap: 35px;
+}
+.header-left nav ul {
+  display: flex;
+  gap: 22px;
+}
+.header-left nav ul li a {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.header-right > button:nth-child(1) {
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  border: 0;
+  font-size: 14px;
+}
+.header-right > button:nth-child(1) > span {
+  color: var(--text-muted);
+}
+
+.header-right > button:nth-child(1) > svg {
+  fill: var(--text-muted);
+}
+
+.login-btn {
+  padding: 0 24px;
+  height: 40px;
+  background-color: var(--brand-color);
+  border-radius: 4px;
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+}
+
+.jumbotron {
+  background-color: #eee;
+  padding: 20px 0px;
+}
+
+.jumbotron-container {
+  width: 75%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.jumbotron-container h1 {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.jumbotron-container p,
+.jumbotron-container h1 {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+.jumbotron-container p {
+  font-size: 14px;
+}
+
+.join-btn {
+  text-align: center;
+  background: var(--gradient--brand);
+  width: max-content;
+  height: 48px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 65px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.tinder-about-content {
+  width: 85%;
+  margin: 65px auto;
+  display: block;
+  gap: 32px;
+}
+
+.col-image {
+  width: 100%;
+}
+
+.col-image > img {
+  width: 100%;
+}
+
+.about-box {
+  padding: 20px 0;
+}
+.about-box h2 {
+  margin: 28px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.about-box p {
+  color: #505965;
+}
+
+@media screen and (min-width: 590px) {
+  .jumbotron-container h1 {
+    font-size: 2.2rem;
+  }
+  .jumbotron-container p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .tinder-about-content {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 925px) {
+  .header-left > nav {
+    display: block;
+  }
+
+  .header-right {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .jumbotron-container {
+    max-width: 1024px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

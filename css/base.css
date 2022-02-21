@@ -11,6 +11,8 @@
   --gradient--platinum: linear-gradient(45deg, #111418, #656e7b);
   --gradient--platinum-shine: linear-gradient(45deg, #111418, #656e7b, #111418);
   --gradient--brand: linear-gradient(45deg, #fd267a, #ff6036);
+  --text-muted: #505965;
+  --brand-color: #fd267a;
 }
 ::-webkit-scrollbar {
   width: 0px;
