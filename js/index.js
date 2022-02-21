@@ -2,6 +2,7 @@
 
 window.addEventListener("scroll", function (e) {
   const scroll = window.scrollY;
+  console.log(scroll);
   const opacity = Math.max(0, Math.min(1, -scroll / 110 + 2));
   const heading = document.querySelector(".hero__heading");
   const cta_btn = document.querySelector(".app-cta");
