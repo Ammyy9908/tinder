@@ -12,11 +12,7 @@ window.addEventListener("scroll", function (e) {
 
   cta_btn.style.opacity = opacity;
   hero_footer.style.opacity = opacity;
-  if (scroll > 100) {
-    overlay.style.background = `var(--gradient--platinum)`;
-  } else {
-    overlay.style.background = `var(--gradient--brand)`;
-  }
+
   heading.style.transform = `rotateX(${scroll / 10}deg)`;
   cta_btn.style.transform = `rotateX(${scroll / 10}deg)`;
 });

@@ -1,0 +1,232 @@
+.jumbotron-section {
+  background-color: #f0f2f4;
+  height: max-content;
+  padding: 12px 0;
+}
+
+.jumbotron-container {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+}
+
+.jumbotron-left-content,
+.jumbotron-right-content {
+  height: 100%;
+}
+
+.jumbotron-left-content-wrapper {
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.jumbotron-header {
+  width: 100%;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 2.4rem;
+  margin: 16px 0;
+}
+.jumbotron-left-content-wrapper > p {
+  margin: 25px auto;
+}
+.jumbotron-left-content-wrapper > span {
+  width: 100%;
+}
+
+.jumbotron-left-content-wrapper > span > a {
+  width: fit-content;
+  text-transform: uppercase;
+  padding-left: 24px;
+  padding-right: 24px;
+  min-height: 40px;
+  min-width: 144px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: linear-gradient(45deg, #fd267a, #ff6036);
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  border-radius: 100px;
+}
+
+.jumbotron-left-content-wrapper > span > a:hover {
+  box-shadow: 0 2px 6px 0 rgb(101 110 123 / 12%);
+}
+
+.jumbotron-right-content {
+  height: 100%;
+  flex: 1;
+}
+
+.jumbotron-placeholder {
+  --aspect-ratio: (4/3);
+  position: relative;
+}
+
+.jumbotron-illustrations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.illustration {
+  z-index: auto;
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: 375px;
+  display: none;
+}
+.illustration1 {
+  transform: translate3d(calc(-54%), calc(-60%), 0px);
+}
+
+.illustration2 {
+  transform: translate3d(calc(-46%), calc(-40%), 0px);
+}
+.illustration-wrapper {
+  padding-bottom: 26px;
+  padding-top: 24px;
+  padding-left: 28px;
+  padding-right: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.illustration-content {
+  text-align: center;
+}
+.illustration1 > .illustration-wrapper {
+  background: radial-gradient(
+    ellipse 130% 110% at bottom,
+    #fff 40%,
+    #ba52f5 60%,
+    #9908e8 100%
+  );
+}
+.illustration2 > .illustration-wrapper {
+  background: radial-gradient(
+    ellipse 130% 110% at bottom,
+    #fff 40%,
+    #47a1ff 60%,
+    #0a53ac 100%
+  );
+}
+
+.illustration-icon {
+  height: 72px;
+  width: 72px;
+  padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  margin-right: 12px;
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px 0 rgb(101 110 123 / 12%);
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #d4d8de;
+}
+.illustration-icon:nth-child(1) {
+  color: #fd267a;
+}
+.illustration-icon svg {
+  width: 100%;
+  height: 100%;
+}
+.illustration-icon:nth-child(2) {
+  color: #47a1ff !important;
+}
+
+.section-content {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.standout-second {
+  flex-direction: row-reverse;
+}
+
+.header-icon {
+  width: 72px;
+  height: 72px;
+  padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  margin-right: 12px;
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px 0 rgb(101 110 123 / 12%);
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #d4d8de;
+}
+.icon-star {
+  color: #47a1ff;
+}
+.flash-star {
+  color: #ba52f5;
+}
+
+.section-image {
+  width: 100%;
+}
+.section-image img {
+  width: 100%;
+  height: max-content;
+}
+@media screen and (min-width: 896px) {
+  .jumbotron-section {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .jumbotron-container {
+    max-width: 1024px;
+    margin-bottom: 16px;
+  }
+
+  .jumbotron-left-content-wrapper > span > a {
+    margin: 40px 0;
+  }
+
+  .section {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .section-content {
+    max-width: 1024px;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1060px) {
+  .jumbotron-container {
+    display: flex;
+  }
+  .illustration {
+    display: block;
+  }
+}
